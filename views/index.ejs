@@ -1,4 +1,4 @@
-<script src="/node_modules/socket.io/lib/socket.io.js"></script>
+<script src="http://cdn.socket.io/stable/socket.io.js"></script>
 <script src="/javascripts/stopWatch.js"></script>
 <script src="http://code.jquery.com/jquery-1.6.4.min.js"></script>
 <script type="text/javascript">
@@ -6,7 +6,8 @@ $(function(){
 
 });
 
-var socket = io.connect('http://george-sample.fluxflex.com/');
+var socket = new io.Socket('http://george-sample.fluxflex.com/');
+socket.connect();
 
 // 初回アクセス
 socket.on('connect', function(msg) {
