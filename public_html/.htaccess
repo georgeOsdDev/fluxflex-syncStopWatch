@@ -4,7 +4,6 @@ Options +ExecCGI
 RewriteEngine On
 
 RewriteCond %{REQUEST_FILENAME} !-f
-RewriteCond $1 !^socket.io
 RewriteRule ^(.*)$ server.fcgi [QSA,L]
 RewriteBase /
 
