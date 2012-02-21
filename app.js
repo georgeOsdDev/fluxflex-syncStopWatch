@@ -34,7 +34,7 @@ app.get('/', routes.index);
 //app.listen(3000);
 // You do this:
 fcgiApp.handle(app);
-console.log(app.address());
+//console.log(app.address());
 //console.log("Express server listening on port %d in %s mode", app.address().port, app.settings.env);
 
 var activeUser = 0;
